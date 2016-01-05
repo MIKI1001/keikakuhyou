@@ -101,8 +101,8 @@
 				21B694301C1D16A50091EBFA /* ViewController.swift */,
 				21B694321C1D16A50091EBFA /* Main.storyboard */,
 				21B694351C1D16A50091EBFA /* Assets.xcassets */,
-				21B694371C1D16A50091EBFA /* LaunchScreen.storyboard */,
 				21B6943A1C1D16A50091EBFA /* Info.plist */,
+				21B694371C1D16A50091EBFA /* LaunchScreen.storyboard */,
 			);
 			path = Keikaku;
 			sourceTree = "<group>";
@@ -482,6 +482,7 @@
 				21B694551C1D16A50091EBFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21B694561C1D16A50091EBFA /* Build configuration list for PBXNativeTarget "KeikakuTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +491,7 @@
 				21B694581C1D16A50091EBFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21B694591C1D16A50091EBFA /* Build configuration list for PBXNativeTarget "KeikakuUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +500,7 @@
 				21B6945B1C1D16A50091EBFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
