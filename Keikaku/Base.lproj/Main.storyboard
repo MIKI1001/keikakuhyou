@@ -18,8 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iEi-tp-fRk">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                                <rect key="frame" x="0.0" y="53" width="320" height="466"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40O-MA-vnT">
+                                <rect key="frame" x="31" y="20" width="258" height="30"/>
+                                <string key="text" base64-UTF8="YES">
+5pel44CA5pyI44CA54Gr44CA5rC044CA5pyo44CA6YeR44CACOWcnw
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -58,10 +67,10 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEG-v7-aJN">
                                 <rect key="frame" x="7" y="463" width="48" height="48"/>
-                                <color key="backgroundColor" red="0.86265141430000003" green="0.40741031729999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.99142769679999998" blue="0.18794916189999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <state key="normal" title="＋">
-                                    <color key="titleColor" red="0.33214855030000001" green="1" blue="0.25701032019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.12770092450000001" blue="0.14957415439999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -94,19 +103,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcx-nO-oiR">
-                                <rect key="frame" x="0.0" y="326" width="216" height="68"/>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tEF-BH-WhD">
-                                <rect key="frame" x="0.0" y="440" width="216" height="68"/>
-                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UR-9r-ic7">
+                                <rect key="frame" x="0.0" y="174" width="320" height="106"/>
+                                <color key="backgroundColor" red="1" green="0.79509775504017655" blue="0.64748718391736393" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwT-Bd-GZ6">
+                                <rect key="frame" x="0.0" y="288" width="320" height="106"/>
+                                <color key="backgroundColor" red="0.62973934909175389" green="0.90928711753363478" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zE2-9o-hfk">
+                                <rect key="frame" x="0.0" y="402" width="320" height="107"/>
+                                <color key="backgroundColor" red="0.61897679907608616" green="1" blue="0.52613684214077105" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LNd-f2-aal">
                                 <rect key="frame" x="160" y="28" width="140" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGu-md-Cna">
-                                <rect key="frame" x="0.0" y="25" width="62" height="33"/>
+                                <rect key="frame" x="10" y="25" width="62" height="33"/>
                                 <attributedString key="attributedText">
                                     <fragment content="用事          ">
                                         <attributes>
@@ -159,11 +183,8 @@
                                     <action selector="b6:" destination="XeK-CE-Mhy" eventType="touchUpInside" id="xtN-xe-qM9"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bB-Ew-rbz">
-                                <rect key="frame" x="0.0" y="212" width="216" height="68"/>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMd-sv-EK8">
-                                <rect key="frame" x="0.0" y="53" width="62" height="35"/>
+                                <rect key="frame" x="10" y="53" width="62" height="35"/>
                                 <attributedString key="attributedText">
                                     <fragment content="曜日">
                                         <attributes>
@@ -177,7 +198,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxS-LS-ymC">
-                                <rect key="frame" x="0.0" y="174" width="151" height="30"/>
+                                <rect key="frame" x="10" y="174" width="151" height="30"/>
                                 <attributedString key="attributedText">
                                     <fragment content="時間の長さ">
                                         <attributes>
@@ -190,7 +211,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAN-uM-akV">
-                                <rect key="frame" x="0.0" y="402" width="151" height="30"/>
+                                <rect key="frame" x="10" y="402" width="151" height="30"/>
                                 <attributedString key="attributedText">
                                     <fragment content="終わる時間">
                                         <attributes>
@@ -240,7 +261,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNU-a3-BJT">
-                                <rect key="frame" x="0.0" y="288" width="151" height="30"/>
+                                <rect key="frame" x="10" y="288" width="151" height="30"/>
                                 <attributedString key="attributedText">
                                     <fragment content="始まる時間">
                                         <attributes>
@@ -270,17 +291,40 @@
                                     <action selector="b7:" destination="XeK-CE-Mhy" eventType="touchUpInside" id="0PN-Jo-bKj"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bB-Ew-rbz">
+                                <rect key="frame" x="10" y="212" width="216" height="68"/>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcx-nO-oiR">
+                                <rect key="frame" x="10" y="326" width="148" height="68"/>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tgD-4y-Z1g">
+                                <rect key="frame" x="166" y="326" width="148" height="68"/>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xs4-ZA-MtA">
+                                <rect key="frame" x="10" y="440" width="148" height="68"/>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nS7-TA-zNf">
+                                <rect key="frame" x="166" y="440" width="148" height="68"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="TaE-ZL-tVj"/>
                     <connections>
+                        <outlet property="label1" destination="8UR-9r-ic7" id="Scd-B2-7kb"/>
+                        <outlet property="label2" destination="JwT-Bd-GZ6" id="jbC-fb-W6M"/>
+                        <outlet property="label3" destination="zE2-9o-hfk" id="Rdo-ZI-AdO"/>
+                        <outlet property="myUIPicker" destination="1bB-Ew-rbz" id="kHB-5d-rZ0"/>
+                        <outlet property="myUIPicker2" destination="bcx-nO-oiR" id="DRl-bd-Mu3"/>
+                        <outlet property="myUIPicker3" destination="tgD-4y-Z1g" id="B0X-M6-4bw"/>
+                        <outlet property="myUIPicker4" destination="xs4-ZA-MtA" id="yGC-gC-1pQ"/>
+                        <outlet property="myUIPicker5" destination="nS7-TA-zNf" id="ayU-9k-c9I"/>
                         <outlet property="yougiTextField" destination="LNd-f2-aal" id="NJB-gb-B7E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1h-GU-0Su" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="416" y="-646"/>
+            <point key="canvasLocation" x="416" y="-663"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="KpD-1B-Ved">
