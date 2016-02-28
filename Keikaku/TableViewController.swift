@@ -8,10 +8,14 @@
 
 import UIKit
 
-class TableViewController: UIViewController {
+class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet var plusButton: UIButton!
-
+    @IBOutlet var plusButton: UIButton! 
+    let saveData: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+    @IBOutlet var youziTextField: UITextField!
+    @IBOutlet var table: UITableView!
+    var data = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.plusButton.layer.cornerRadius = 24
@@ -20,12 +24,28 @@ class TableViewController: UIViewController {
         plusButton.layer.shadowOpacity = 0.6
         plusButton.layer.shadowOffset = CGSizeMake(2, 3)
         // Do any additional setup after loading the view.
+//        NSLog(saveData.objectForKey("youzi")as! String!)
+        youziTextField.text = saveData.objectForKey("youzi") as! String?
+        table.dataSource = self
+        table.delegate = self
+        data = ["youziTextField"]
     }
-    
+
+    override func viewDidAppear(animated: Bool) {
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+    func tableView(tableView: UITableView, cellForrowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+        
+        cell.textLabel?.text = data[indexPath.row]
+        return cell
     }
     @IBAction func add() {
     

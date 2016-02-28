@@ -85,6 +85,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="plusButton" destination="eEG-v7-aJN" id="XI5-z0-qv3"/>
+                        <outlet property="table" destination="aty-M4-5el" id="vuH-mo-92d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kov-9Z-S9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -107,21 +108,21 @@
                                 <rect key="frame" x="0.0" y="174" width="320" height="106"/>
                                 <color key="backgroundColor" red="1" green="0.79509775504017655" blue="0.64748718391736393" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwT-Bd-GZ6">
                                 <rect key="frame" x="0.0" y="288" width="320" height="106"/>
                                 <color key="backgroundColor" red="0.62973934909175389" green="0.90928711753363478" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zE2-9o-hfk">
                                 <rect key="frame" x="0.0" y="402" width="320" height="107"/>
                                 <color key="backgroundColor" red="0.61897679907608616" green="1" blue="0.52613684214077105" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LNd-f2-aal">
@@ -248,9 +249,6 @@
                                     <action selector="save" destination="XeK-CE-Mhy" eventType="touchUpInside" id="rVN-Yu-yUb"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Wd-ul-2cJ">
-                                <rect key="frame" x="158" y="529" width="51" height="31"/>
-                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCj-b2-0jf">
                                 <rect key="frame" x="42" y="96" width="258" height="30"/>
                                 <string key="text" base64-UTF8="YES">
@@ -306,6 +304,9 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nS7-TA-zNf">
                                 <rect key="frame" x="166" y="440" width="148" height="68"/>
                             </pickerView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Wd-ul-2cJ">
+                                <rect key="frame" x="158" y="529" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -319,6 +320,7 @@
                         <outlet property="myUIPicker3" destination="tgD-4y-Z1g" id="B0X-M6-4bw"/>
                         <outlet property="myUIPicker4" destination="xs4-ZA-MtA" id="yGC-gC-1pQ"/>
                         <outlet property="myUIPicker5" destination="nS7-TA-zNf" id="ayU-9k-c9I"/>
+                        <outlet property="siyou" destination="1Wd-ul-2cJ" id="hAn-4X-Ope"/>
                         <outlet property="yougiTextField" destination="LNd-f2-aal" id="NJB-gb-B7E"/>
                     </connections>
                 </viewController>
