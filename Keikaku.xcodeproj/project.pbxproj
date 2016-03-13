@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21A1D2591C952C0A00C39A83 /* tyekkuari.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A1D2571C952C0A00C39A83 /* tyekkuari.png */; };
+		21A1D25A1C952C0A00C39A83 /* tyekkunasi.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A1D2581C952C0A00C39A83 /* tyekkunasi.png */; };
 		21B6942F1C1D16A50091EBFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B6942E1C1D16A50091EBFA /* AppDelegate.swift */; };
 		21B694311C1D16A50091EBFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B694301C1D16A50091EBFA /* ViewController.swift */; };
 		21B694341C1D16A50091EBFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B694321C1D16A50091EBFA /* Main.storyboard */; };
@@ -16,8 +18,6 @@
 		21B6944F1C1D16A50091EBFA /* KeikakuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B6944E1C1D16A50091EBFA /* KeikakuUITests.swift */; };
 		21D80A631C4B3B9700FD5742 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D80A621C4B3B9700FD5742 /* TableViewController.swift */; };
 		21F848081C5DAC2C0023E798 /* senntakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F848071C5DAC2C0023E798 /* senntakuViewController.swift */; };
-		21F8480B1C5DB7CE0023E798 /* tyekkunasi.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F848091C5DB7CE0023E798 /* tyekkunasi.png */; };
-		21F8480C1C5DB7CE0023E798 /* tyekkuari.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F8480A1C5DB7CE0023E798 /* tyekkuari.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21A1D2571C952C0A00C39A83 /* tyekkuari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tyekkuari.png; sourceTree = "<group>"; };
+		21A1D2581C952C0A00C39A83 /* tyekkunasi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tyekkunasi.png; sourceTree = "<group>"; };
 		21B6942B1C1D16A50091EBFA /* Keikaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keikaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B6942E1C1D16A50091EBFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21B694301C1D16A50091EBFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,8 +55,6 @@
 		21B694501C1D16A50091EBFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21D80A621C4B3B9700FD5742 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		21F848071C5DAC2C0023E798 /* senntakuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = senntakuViewController.swift; sourceTree = "<group>"; };
-		21F848091C5DB7CE0023E798 /* tyekkunasi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tyekkunasi.png; path = ../../tyekkunasi.png; sourceTree = "<group>"; };
-		21F8480A1C5DB7CE0023E798 /* tyekkuari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tyekkuari.png; path = ../../tyekkuari.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +110,8 @@
 				21D80A621C4B3B9700FD5742 /* TableViewController.swift */,
 				21F848071C5DAC2C0023E798 /* senntakuViewController.swift */,
 				21B694321C1D16A50091EBFA /* Main.storyboard */,
-				21F848091C5DB7CE0023E798 /* tyekkunasi.png */,
-				21F8480A1C5DB7CE0023E798 /* tyekkuari.png */,
+				21A1D2571C952C0A00C39A83 /* tyekkuari.png */,
+				21A1D2581C952C0A00C39A83 /* tyekkunasi.png */,
 				21B694351C1D16A50091EBFA /* Assets.xcassets */,
 				21B6943A1C1D16A50091EBFA /* Info.plist */,
 				21B694371C1D16A50091EBFA /* LaunchScreen.storyboard */,
@@ -242,10 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				21B694391C1D16A50091EBFA /* LaunchScreen.storyboard in Resources */,
-				21F8480B1C5DB7CE0023E798 /* tyekkunasi.png in Resources */,
+				21A1D2591C952C0A00C39A83 /* tyekkuari.png in Resources */,
 				21B694361C1D16A50091EBFA /* Assets.xcassets in Resources */,
+				21A1D25A1C952C0A00C39A83 /* tyekkunasi.png in Resources */,
 				21B694341C1D16A50091EBFA /* Main.storyboard in Resources */,
-				21F8480C1C5DB7CE0023E798 /* tyekkuari.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
