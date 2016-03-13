@@ -10,9 +10,8 @@ import UIKit
 
 class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet var plusButton: UIButton! 
+    @IBOutlet var plusButton: UIButton!
     let saveData: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-    @IBOutlet var youziTextField: UITextField!
     @IBOutlet var table: UITableView!
     var data = [String]()
     
@@ -24,16 +23,15 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         plusButton.layer.shadowOpacity = 0.6
         plusButton.layer.shadowOffset = CGSizeMake(2, 3)
         // Do any additional setup after loading the view.
-//        NSLog(saveData.objectForKey("youzi")as! String!)
-        youziTextField.text = saveData.objectForKey("youzi") as! String?
+        //        NSLog(saveData.objectForKey("youzi")as! String!)
         table.dataSource = self
         table.delegate = self
         data = ["youziTextField"]
     }
-
+    
     override func viewDidAppear(animated: Bool) {
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -41,25 +39,25 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
-    func tableView(tableView: UITableView, cellForrowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell")! as UITableViewCell
         
         cell.textLabel?.text = data[indexPath.row]
         return cell
     }
     @IBAction func add() {
-    
+        
     }
     
-
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

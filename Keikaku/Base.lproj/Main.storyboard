@@ -17,9 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iEi-tp-fRk">
-                                <rect key="frame" x="0.0" y="53" width="320" height="466"/>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40O-MA-vnT">
                                 <rect key="frame" x="31" y="20" width="258" height="30"/>
                                 <string key="text" base64-UTF8="YES">
@@ -29,6 +26,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iEi-tp-fRk">
+                                <rect key="frame" x="0.0" y="53" width="320" height="466"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -321,7 +321,7 @@
                         <outlet property="myUIPicker4" destination="xs4-ZA-MtA" id="yGC-gC-1pQ"/>
                         <outlet property="myUIPicker5" destination="nS7-TA-zNf" id="ayU-9k-c9I"/>
                         <outlet property="siyou" destination="1Wd-ul-2cJ" id="hAn-4X-Ope"/>
-                        <outlet property="yougiTextField" destination="LNd-f2-aal" id="NJB-gb-B7E"/>
+                        <outlet property="youziTextField" destination="LNd-f2-aal" id="Kgq-bz-TP6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1h-GU-0Su" userLabel="First Responder" sceneMemberID="firstResponder"/>
