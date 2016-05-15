@@ -13,7 +13,14 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet var plusButton: UIButton!
     let saveData: NSUserDefaults = NSUserDefaults.standardUserDefaults()
     @IBOutlet var table: UITableView!
-    var data = [String]()
+    var keyArray = [String]()
+    
+    override func viewWillAppear(animated: Bool) {
+        if saveData.stringArrayForKey("keyArray") != nil {
+            keyArray = saveData.stringArrayForKey("keyArray")!
+            table.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +33,14 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         //        NSLog(saveData.objectForKey("youzi")as! String!)
         table.dataSource = self
         table.delegate = self
-        data = ["youziTextField"]
-    }
-    
-    override func viewDidAppear(animated: Bool) {
+        keyArray = ["youziTextField"]
+//        let saveData: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        
+        
+//        if(saveData.objectForKey("youzi") != nil){
+//            print(saveData.objectForKey("youzi"))
+//            youziTextField.text = saveData.objectForKey("youzi") as! String
+//        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,12 +48,13 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         // Dispose of any resources that can be recreated.
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return keyArray.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell")! as UITableViewCell
         
-        cell.textLabel?.text = data[indexPath.row]
+        let planDict = saveData.dictionaryForKey(keyArray[indexPath.row])
+        cell.textLabel?.text = planDict!["youzi"] as? String
         return cell
     }
     @IBAction func add() {
@@ -50,14 +62,6 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
+
     
 }
