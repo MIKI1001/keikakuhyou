@@ -20,6 +20,7 @@ class YoubiViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        table.scrollEnabled = false
         table.dataSource = self
         table.delegate = self
         YoubiArray = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"]
@@ -52,19 +53,20 @@ class YoubiViewController: UIViewController, UITableViewDataSource, UITableViewD
             return cell
         }
     }
-    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
-        cell!.accessoryType = .Checkmark
-        Youbityekku[indexPath.row] = true
-        youbiData.setObject(Youbityekku, forKey: "tyekku")
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    }
-    
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
-        cell!.accessoryType = .None
-        Youbityekku[indexPath.row] = false
-        youbiData.setObject(Youbityekku, forKey: "tyekku")
+        if Youbityekku[indexPath.row] == true {
+            let cell = tableView.cellForRowAtIndexPath(indexPath)
+            cell!.accessoryType = .None
+            Youbityekku[indexPath.row] = false
+            youbiData.setObject(Youbityekku, forKey: "tyekku")
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        }else{
+            let cell = tableView.cellForRowAtIndexPath(indexPath)
+            cell!.accessoryType = .Checkmark
+            Youbityekku[indexPath.row] = true
+            youbiData.setObject(Youbityekku, forKey: "tyekku")
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+
+        }
     }
 }

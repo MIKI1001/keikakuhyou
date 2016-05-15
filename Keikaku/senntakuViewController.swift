@@ -11,9 +11,8 @@ import UIKit
 class senntakuViewController: UIViewController, UITextFieldDelegate {
     
     var youbiArray:[Int] = [0, 0, 0, 0, 0, 0, 0]
-//    @IBOutlet var myUIPicker: UIPickerView!
-//    @IBOutlet var myUIPicker2: UIPickerView!
-//    @IBOutlet var myUIPicker3: UIPickerView!
+    @IBOutlet var youbiButton: UIButton!
+    @IBOutlet var syuusiButton: UIButton!
 //    @IBOutlet var myUIPicker4: UIPickerView!
 //    @IBOutlet var myUIPicker5: UIPickerView!
 //    @IBOutlet var label1: UILabel!
@@ -34,7 +33,15 @@ class senntakuViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        youziTextField.delegate = self
+        youziTextField.delegate = self
+        self.youbiButton.layer.cornerRadius = 24
+        youbiButton.layer.shadowColor = UIColor.blackColor().CGColor
+        youbiButton.layer.shadowOpacity = 0.6
+        youbiButton.layer.shadowOffset = CGSizeMake(2, 3)
+        self.syuusiButton.layer.cornerRadius = 24
+        syuusiButton.layer.shadowColor = UIColor.blackColor().CGColor
+        syuusiButton.layer.shadowOpacity = 0.6
+        syuusiButton.layer.shadowOffset = CGSizeMake(2, 3)
 ////        myUIPicker.frame = CGRectMake(0,0,self.view.bounds.width, 180.0)
 //        myUIPicker.delegate = self
 //        myUIPicker.dataSource = self
