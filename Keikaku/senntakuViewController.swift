@@ -10,7 +10,8 @@ import UIKit
 
 class senntakuViewController: UIViewController, UITextFieldDelegate {
     
-    var youbiArray:[Int] = [0, 0, 0, 0, 0, 0, 0]
+    
+    var Youbityekku = [false, false, false, false, false, false, false]
     @IBOutlet var youbiButton: UIButton!
     @IBOutlet var syuusiButton: UIButton!
 //    @IBOutlet var myUIPicker4: UIPickerView!
@@ -121,7 +122,7 @@ class senntakuViewController: UIViewController, UITextFieldDelegate {
 //    }
     
     @IBAction func save() {
-       
+       self.navigationController?.popViewControllerAnimated(true)
 //        let zikanArray:[String] = [myValues[myUIPicker.selectedRowInComponent(0)] as! String, myValues2[myUIPicker2.selectedRowInComponent(0)] as! String, myValues3[myUIPicker3.selectedRowInComponent(0)] as! String, myValues2[myUIPicker4.selectedRowInComponent(0)] as! String, myValues3[myUIPicker5.selectedRowInComponent(0)] as! String]
 //        
 //        let youzi :String! = youziTextField.text
