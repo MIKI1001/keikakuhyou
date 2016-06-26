@@ -10,7 +10,6 @@ import UIKit
 
 class senntakuViewController: UIViewController, UITextFieldDelegate {
 
-    var Youbityekku = []
     var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     @IBOutlet var youbiButton: UIButton!
     @IBOutlet var syuusiButton: UIButton!
@@ -107,10 +106,6 @@ class senntakuViewController: UIViewController, UITextFieldDelegate {
 ////        print("value: \(myValues[row])")
 //        
 //    }
-    
-    override func viewWillAppear(animated: Bool) {
-        Youbityekku = appDelegate.youbityekku
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

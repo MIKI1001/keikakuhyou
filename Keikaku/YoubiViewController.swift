@@ -27,6 +27,7 @@ class YoubiViewController: UIViewController, UITableViewDataSource, UITableViewD
         table.delegate = self
         YoubiArray = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"]
         table.tableFooterView = UIView()
+        self.Youbityekku = appDelegate.youbityekku
     }
     
 //    override func viewWillAppear(animated: Bool) {
@@ -45,7 +46,7 @@ class YoubiViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func didMoveToParentViewController(parent: UIViewController?) {
         super.willMoveToParentViewController(parent)
         if parent == nil {
-            appDelegate.youbityekku = Youbityekku
+            appDelegate.youbityekku = self.Youbityekku
         }
     }
     /*

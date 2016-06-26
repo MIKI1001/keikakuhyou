@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var youbityekku = []
+    var youbityekku = [false, false, false, false, false, false, false]
     var window: UIWindow?
 
 
