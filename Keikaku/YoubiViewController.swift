@@ -16,6 +16,8 @@ class YoubiViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     var YoubiArray = [String]()
     var Youbityekku = [false, false, false, false, false, false, false]
+    var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,25 +27,42 @@ class YoubiViewController: UIViewController, UITableViewDataSource, UITableViewD
         table.delegate = self
         YoubiArray = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"]
         table.tableFooterView = UIView()
-        //if let checker: [Bool] = youbiData.objectForKey("tyekku") as? [Bool] {
-        // Youbityekku = checker
-       // }
     }
+    
+//    override func viewWillAppear(animated: Bool) {
+//        if youbityekku[indexPath.row] == true {
+//           Youbityekku = appDelegate.youbityekku
+//        }else{
+//            
+//        }
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let SViewController = segue.destinationViewController as! senntakuViewController
-        SViewController.Youbityekku = Youbityekku
+    override func didMoveToParentViewController(parent: UIViewController?) {
+        super.willMoveToParentViewController(parent)
+        if parent == nil {
+            appDelegate.youbityekku = Youbityekku
+        }
     }
+    /*
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "segue") {
+            // SecondViewControllerクラスをインスタンス化してsegue（画面遷移）で値を渡せるようにバンドルする
+            var senntakuView : senntakuViewController = segue.destinationViewController as! senntakuViewController
+            // secondView（バンドルされた変数）に受け取り用の変数を引数とし_paramを渡す（_paramには渡したい値）
+            // この時SecondViewControllerにて受け取る同型の変数を用意しておかないとエラーになる
+            senntakuView.Youbityekku = Youbityekku
+        }
+    }
+*/
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return YoubiArray.count
     }
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell")! as UITableViewCell

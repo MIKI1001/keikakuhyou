@@ -9,9 +9,9 @@
 import UIKit
 
 class senntakuViewController: UIViewController, UITextFieldDelegate {
-    
-    
-    var Youbityekku = [false, false, false, false, false, false, false]
+
+    var Youbityekku = []
+    var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     @IBOutlet var youbiButton: UIButton!
     @IBOutlet var syuusiButton: UIButton!
 //    @IBOutlet var myUIPicker4: UIPickerView!
@@ -43,6 +43,8 @@ class senntakuViewController: UIViewController, UITextFieldDelegate {
         syuusiButton.layer.shadowColor = UIColor.blackColor().CGColor
         syuusiButton.layer.shadowOpacity = 0.6
         syuusiButton.layer.shadowOffset = CGSizeMake(2, 3)
+        
+
 ////        myUIPicker.frame = CGRectMake(0,0,self.view.bounds.width, 180.0)
 //        myUIPicker.delegate = self
 //        myUIPicker.dataSource = self
@@ -106,6 +108,10 @@ class senntakuViewController: UIViewController, UITextFieldDelegate {
 //        
 //    }
     
+    override func viewWillAppear(animated: Bool) {
+        Youbityekku = appDelegate.youbityekku
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -120,7 +126,6 @@ class senntakuViewController: UIViewController, UITextFieldDelegate {
 //            youbiArray[button.tag-1] = youbiArray[button.tag-1] - 1
 //        }
 //    }
-    
     @IBAction func save() {
        self.navigationController?.popViewControllerAnimated(true)
 //        let zikanArray:[String] = [myValues[myUIPicker.selectedRowInComponent(0)] as! String, myValues2[myUIPicker2.selectedRowInComponent(0)] as! String, myValues3[myUIPicker3.selectedRowInComponent(0)] as! String, myValues2[myUIPicker4.selectedRowInComponent(0)] as! String, myValues3[myUIPicker5.selectedRowInComponent(0)] as! String]
