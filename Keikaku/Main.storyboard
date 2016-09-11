@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MBt-k7-WOE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MBt-k7-WOE">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -281,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="-35" y="-663"/>
         </scene>
-        <!--View Controller-->
+        <!--Time View Controller-->
         <scene sceneID="0a9-YD-hZY">
             <objects>
-                <viewController id="Djx-Eo-08q" sceneMemberID="viewController">
+                <viewController id="Djx-Eo-08q" customClass="TimeViewController" customModule="Keikaku" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="93B-tV-L2u"/>
                         <viewControllerLayoutGuide type="bottom" id="qap-BK-1B9"/>
@@ -369,6 +369,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6t4-UH-21f"/>
+                    <connections>
+                        <outlet property="date1" destination="bEl-HJ-BIE" id="Jvu-Ot-t8A"/>
+                        <outlet property="date2" destination="615-SA-vp6" id="sg2-3q-xuW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q04-0x-hcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

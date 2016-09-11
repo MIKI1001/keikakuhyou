@@ -11,6 +11,8 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var date1 : UIDatePicker!
+    var date2 : UIDatePicker!
     var youbityekku = [false, false, false, false, false, false, false]
     var window: UIWindow?
 
